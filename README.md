@@ -1,4 +1,4 @@
-<h1 align="center">Gerador de Senhas 💡🔐</h1>
+<h1 align="center">🎥 TeleAnimes 👾</h1>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
@@ -6,51 +6,60 @@
   </a>
 </p>
 
-Projeto simples para gerar senhas aleatórias com comprimento personalizado. Ideal para utilizar em situações onde é necessário criar senhas seguras rapidamente.
+O "TeleAnimes" é um site interativo desenvolvido para facilitar a busca e a filtragem de animes, proporcionando uma experiência rica e envolvente para os fãs do gênero. Com uma interface moderna e intuitiva, o projeto utiliza HTML, CSS e JavaScript para criar uma plataforma onde os usuários podem explorar uma vasta gama de animes de forma rápida e eficiente.
 
-## Funcionalidades 🛠️
+## 🔍 Funcionalidades 🆕
 
-- Geração de senhas aleatórias com caracteres alfanuméricos e especiais.
-- Escolha da quantidade de senhas a serem geradas.
-- Especificação do comprimento da senha desejada.
-- Histórico das senhas geradas.
-- Opção de retornar ao menu principal ou sair do programa.
+- Início.
+- Dúvidas/Contato.
+- Novidades.
+- Gêneros.
+- Deficiência Visual
+- Barra de Digitação
+- Login.
+- Barra Secundária	
+- Barra Terciária
+- Exibição de Animes.
+- Direitos Autorais.
 
-## Tecnologias utilizadas 🖥️
+## ⚙️ Tecnologias utilizadas 🖥️
 
-- Python
-- Bibliotecas:
+- HTML
+- CSS
+- JavaScript
 
-- os
-- random
-- time (importando a função sleep)
-- colorama (importando o estilo Style)
+## 📦 Como Usar 📄
 
-## Instalação 📥 
+### Início 🏠
 
-Antes de executar o Gerador de Senhas, certifique-se de ter o Python 3 instalado em sua máquina. Em seguida, siga as instruções abaixo:
+ O usuário pode voltar para a tela inicial ao clicar em "Início". Ao rolar a tela para baixo, a opção "Início" se transforma em "Voltar", permitindo que o usuário retorne rapidamente ao topo do site.
+Dúvidas/Contato 📧
 
-1. Clone este repositório em sua máquina local.
-   ```bash
-    git clone https://github.com/joseffermax/Gerador-de-Senhas.git
+Um link que leva o usuário a um e-mail para tirar dúvidas ou enviar feedback sobre o site.
+Novidades 🆕
 
-2. Navegue até o diretório do projeto.
-   ```bash
-   cd Gerador-de-Senhas
+Um botão que redireciona o usuário para o site da Crunchyroll, onde pode encontrar as últimas novidades sobre animes.
+Gêneros 🎭
 
-3. Instale as dependências necessárias.
-   ```bash
-   pip install -r requirements.txt
+Um link que leva para a seção de gêneros no site da Crunchyroll, permitindo que os usuários explorem diferentes categorias de animes.
+Procurar Animes 🔍
 
-## Como Usar▶️
+Uma seção onde o usuário pode inserir o nome de um anime e encontrar resultados correspondentes.
+Os animes que não correspondem ao nome inserido desaparecem da lista.
+Login 🔑
 
-1 - Abra o terminal e navegue até o diretório do projeto.
+A logo do site serve como um link para a seção de login.
+O usuário pode inserir seu nome, e-mail e senha para acessar uma nova aba com suas informações pessoais.
+Filtragem por Sílaba 🔤
 
-2- Execute o arquivo gerador_senhas.py.
+Ao clicar na sílaba correspondente, o site exibe animes que começam com aquela sílaba específica.
+Exibição de Animes 📺
 
-    python Gerador_de_Senhas.py
-   
-Agora você pode utilizar o Gerador de Senhas para criar senhas aleatórias. Siga as instruções exibidas no terminal para especificar a quantidade de senhas a serem geradas e o comprimento desejado. O programa irá processar as senhas e exibi-las no terminal. Você também terá a opção de gerar novas senhas ou sair do programa.
+Os animes são listados com a possibilidade de clicar para ver detalhes.
+Se um anime não estiver disponível, seu nome aparecerá em vermelho, tanto na filtragem quanto na pesquisa.
+Direitos Autorais ©️
+
+Na parte final do site, são exibidos os nomes dos direitos autorais e dos autores, junto com uma mensagem engraçada para encerrar a experiência.
 
 ## Contribuição 🤝
 
