@@ -31,8 +31,13 @@ O "TeleAnimes" é um site interativo desenvolvido para facilitar a busca e a fil
 ## 📦 Como Usar 📄
 
 ### Início 🏠
+O usuário pode voltar para a tela inicial ao clicar em "Início". Ao rolar a tela para baixo, a opção "Início" se transforma em "Voltar", permitindo que o usuário retorne rapidamente ao topo do site.
 
- O usuário pode voltar para a tela inicial ao clicar em "Início". Ao rolar a tela para baixo, a opção "Início" se transforma em "Voltar", permitindo que o usuário retorne rapidamente ao topo do site.
+#### Primeira Opção:
+![Início/Voltar](https://github.com/user-attachments/assets/de08d3ca-1ddc-486f-860f-bf1bed0a55a1)
+#### Segunda Opção:
+![Início/Voltar](https://github.com/user-attachments/assets/de08d3ca-1ddc-486f-860f-bf1bed0a55a1)
+
 Dúvidas/Contato 📧
 
 Um link que leva o usuário a um e-mail para tirar dúvidas ou enviar feedback sobre o site.
