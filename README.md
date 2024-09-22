@@ -43,13 +43,14 @@ O usuário pode voltar para a tela inicial ao clicar em "Início". Ao rolar a te
   <img src="https://github.com/user-attachments/assets/df53c330-4b9c-493f-b07c-d28e489c4038" alt="Início/Voltar" style="border-radius: 15px; width: 10%; max-width: 60px;">
 </p>
 
-#### Dúvidas/Contato 📧
+### Dúvidas/Contato 📧
 Um link que leva o usuário a um e-mail para tirar dúvidas ou enviar feedback sobre o site.
 
 #### Opção de Contato:
 <p align="center">
-  <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Dúvidas/Contato" style="border-radius: 15px; width: 100px; height: 100px;">
+  <img src="https://github.com/user-attachments/assets/1bcc347d-15b7-4694-a874-2014d81cd145" alt="Dúvidas/Contato" style="border-radius: 15px; width: 150px; height: 100px;">
 </p>
+
 
 Novidades 🆕
 
