@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleAnimes</title>
+    <meta name="keywords" content="Animes, Online, Grátis, Melhor Qualidade">
+    <meta name="description" content="Deseja assistir a animes online e de forma gratuita? Você está no lugar certo, seja bem-vindo ao mundo TeleAnimes, o melhor site de anime do mundo!">
+    <meta name="author" content="Joseffer, Adonias e Davi">
+    <link rel="icon" type="image/png" href="images/iconenovo.jpg">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body class="home">
+    <div id="dt_contenedor">
+        <header id="header" class="main" style="opacity: 1;">
+            <div class="hbox">
+                <div class="logo">
+                    <div class="textologo">
+                        <span>T</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>e</span>
+                        <span>A</span>
+                        <span>n</span>
+                        <span>i</span>
+                        <span>m</span>
+                        <span>e</span>
+                        <span>s</span>
+                    </div>
+                </div>
+                <div class="head_main_vagec">
+                    <div class="menu_topo_container">
+                        <ul id="main_header" class="main_header">
+                            <div class="head_main_vagec">
+                                <div class="menu_topo_container">
+                                    <ul id="main_header" class="main_header">
+                                        <a href="#" id="link-inicio">Início</a>
+                                        <a href="#" id="link-duv-cont">Dúvida/Contato</a>
+                                        <a href="https://www.crunchyroll.com/pt-br/videos/new" id="link-novidades">Novidades</a>
+                                        <a href="https://www.crunchyroll.com/pt-br/videos/action" id="link-generos">Gêneros</a>
+                                    </ul>
+                                    <a href="#" id="hidden-button" class="hidden-button"></a>
+                                </div>
+                            </div>                  
+                            <audio id="inicio-audio">
+                                <source src="audio/Início.mp3" type="audio/mpeg">
+                            </audio>
+                            <audio id="duvida-contato-audio">
+                                <source src="audio/Dúvida e Contato.mp3" type="audio/mpeg">
+                            </audio>
+                            <audio id="novidades-audio">
+                                <source src="audio/Novidades.mp3" type="audio/mpeg">
+                            </audio>
+                            <audio id="generos-audio">
+                                <source src="audio/Gêneros.mp3" type="audio/mpeg">
+                            </audio>
+                            <audio id="ouvir-audio">
+                                <source src="audio/Ouvir.mp3" type="audio/mpeg">
+                            </audio>
+                            <audio id="novas-funcionalidades-audio">
+                                <source src="audio/Novas funcionalidades desbloqueadas!.mp3" type="audio/mpeg">
+                            </audio>                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="headitens">
+                    <div id="advc_menu" class="procurar">
+                        <input type="text" placeholder="Procurar Animes..." name="s" id="s" value="" autocomplete="off">
+                        <img id="iconenovo" src="./images/iconenovo.jpg" alt="Ícone" class="logo-icon">
+                        <div id="container">
+                            <div class="form-login" id="formulario" style="display:none;">
+                                <h2>Login</h2>
+                                <form id="loginFormContent">
+                                    <input type="text" id="username" name="username" placeholder="Digite seu nome" required>
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                                    <label for="password">Senha:</label>
+                                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                                    <button type="submit" id="loginButton">Login</button>
+                                </form>
+                            </div>
+                            <div id="userInfo" class="user-area" style="display:none;">
+                                <div id="userGreeting" class="user-greeting" style="display:none;">
+                                    <span>Bem-Vindo, <span id="userName"></span>!</span>
+                                </div>
+                                <table>
+                                    <caption>Usuário</caption>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <td id="displayedName"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td id="displayedEmail"></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <caption>Preferências</caption>
+                                    <tr>
+                                        <th>Anime Favorito</th>
+                                        <td>Naruto</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Personagem Favorito</th>
+                                        <td>Kakashi Hatake</td>
+                                    </tr>
+                                </table>
+                                <button id="logoutButton" style="display:none;">Logout</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <audio id="procurar-animes-audio">
+                    <source src="audio/Procurar Animes....mp3" type="audio/mpeg">
+                </audio>
+            </header>
+        <div id="contenedor">
+            <div class="sub_guia">
+                <div class="yoastbread">
+                    <p id="bread">
+                        <span>
+                            <span class="bread_last">Animes </span>
+                            <span id="errorMessage" style="display: none; color: red;"></span>
+                        </span>
+                    </p>
+                </div>
+                <ul class="abc">
+                    <a href="#">A</a>
+                    <a href="#">B</a>
+                    <a href="#">C</a>
+                    <a href="#">D</a>
+                    <a href="#">E</a>
+                    <a href="#">F</a>
+                    <a href="#">G</a>
+                    <a href="#">H</a>
+                    <a href="#">I</a>
+                    <a href="#">J</a>
+                    <a href="#">K</a>
+                    <a href="#">L</a>
+                    <a href="#">M</a>
+                    <a href="#">N</a>
+                    <a href="#">O</a>
+                    <a href="#">P</a>
+                    <a href="#">Q</a>
+                    <a href="#">R</a>
+                    <a href="#">S</a>
+                    <a href="#">T</a>
+                    <a href="#">U</a>
+                    <a href="#">V</a>
+                    <a href="#">W</a>
+                    <a href="#">X</a>
+                    <a href="#">Y</a>
+                    <a href="#">Z</a>
+                    <a href="#">RESET</a>
+                </ul>
+                <div class="modulo">
+                    <div class="conten">
+                        <header>
+                            <h1>Animes Online</h1>
+                            <span>
+                                <a class="ver_tudo" href="https://www.crunchyroll.com/pt-br" target="_blank" rel="noopener noreferrer">Ver Mais</a>  
+                            </span>         
+                        </header>
+                        <div id="load1" class="load_modulo" style="display: none;">Carregando...</div>
+                        <div id="dt_temporadas" class="animacao_2 items owl_carousel">
+                            <div class="involucro_externo">
+                                <div class="involucro">
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GY8VEQ95Y/darling-in-the-franxx">
+                                                        <img src="images/Darling in the Franxx.jpg" alt="Darling in the Franxx">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GY8VEQ95Y/darling-in-the-franxx">Darling in the Franxx</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GRWE89KMR/kingdom">
+                                                        <img src="images/Kingdom.jpg" alt="Kingdom">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐8.0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GRWE89KMR/kingdom">Kingdom</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GY8VM8MWY/haikyu">
+                                                        <img src="images/Haikyuu!!.jpg" alt="Haikyuu!!">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐8.3
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GY8VM8MWY/haikyu">Haikyuu!</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GY3VKX1MR/hunter-x-hunter">
+                                                        <img src="images/Hunter x Hunter.jpg" alt="Hunter x Hunter">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐8.2
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GY3VKX1MR/hunter-x-hunter">Hunter x Hunte</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G9VHN9PPW/dragon-ball-z">
+                                                        <img src="images/Dragon Ball Z.jpg" alt="Dragon Ball Z">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.9
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G9VHN9PPW/dragon-ball-z">Dragon Ball Z</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G62P48X56/kurokos-basketball">
+                                                        <img src="images/Kuroko No Basket.jpg" alt="Kuroko No Basket">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G62P48X56/kurokos-basketball">Kuroko No Basket</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G6NV7Z50Y/tokyo-ghoul">
+                                                        <img src="images/Tokyo Ghoul.jpg" alt="Tokyo Ghoul">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G6NV7Z50Y/tokyo-ghoul">Tokyo Ghoul</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G6NVGNJGY/ahiru-no-sora">
+                                                        <img src="images/Ahirunosora.jpg" alt="Ahirunosora">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.5
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G6NVGNJGY/ahiru-no-sora">Ahirunosora</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G4PH0WX5J/aoashi">
+                                                        <img src="images/aoashi.jpg" alt="Aoashi">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.8
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G4PH0WX5J/aoashi">Aoashi</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G60X4P8GR/assassins-pride">
+                                                        <img src="images/assassinspride.jpg" alt="Assassinspride">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐8.2
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G60X4P8GR/assassins-pride">Assassinspride</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GXJHM3GQ7/ayaka?srsltid=AfmBOoqV4T6NHzaE2jFx95thbIIVeeLO20XK0D1uS0aTL-WDDvlBY9Nl">
+                                                        <img src="images/ayaka.jpg" alt="Aayaka">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐6.4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GXJHM3GQ7/ayaka?srsltid=AfmBOoqV4T6NHzaE2jFx95thbIIVeeLO20XK0D1uS0aTL-WDDvlBY9Nl">Ayaka</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GYX04955R/berserk">
+                                                        <img src="images/beserk.jpg" alt="Beserk">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐6.5
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GYX04955R/berserk">Beserk</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GYGG99WDY/charlotte">
+                                                        <img src="images/charlotte.jpg" alt="Charlotte">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.5
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GYGG99WDY/charlotte">Charlotte</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="link: https://www.crunchyroll.com/pt-br/series/G6DQDD3WR/fairy-tail">
+                                                        <img src="images/fairytail.jpg" alt="Fairytail">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.8
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="link: https://www.crunchyroll.com/pt-br/series/G6DQDD3WR/fairy-tail">Fairytail</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <header>
+                            <h2>Animes Recentes</h2>
+                            <span>
+                                <a class="ver_tudo" href="https://www.crunchyroll.com/pt-br" target="_blank" rel="noopener noreferrer">Ver Mais</a>  
+                            </span>
+                        </header>
+                        <div id="load2" class="load_modulo" style="display: none;">Carregando...</div>
+                        <div id="dt_temporadas2" class="animacao_2 items owl_carousel">
+                            <div class="involucro_externo">
+                                <div class="involucro">
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GDKHZEP8W/mashle-magic-and-muscles">
+                                                        <img src="images/Mashle.jpg" alt="Mashle">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.8
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GDKHZEP8W/mashle-magic-and-muscles">Mashle</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G4PH0WEKE/blue-lock">
+                                                        <img src="images/Blue Lock.jpg" alt="Blue Lock">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐8.5
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G4PH0WEKE/blue-lock">Blue Lock</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GRDV0019R/jujutsu-kaisen">
+                                                        <img src="images/Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.7
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GRDV0019R/jujutsu-kaisen">Jujutsu Kaisen</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GDKHZEJ0K/solo-leveling">
+                                                        <img src="images/Solo Leveling.jpg" alt="Solo Leveling">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐9.8
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GDKHZEJ0K/solo-leveling">Solo Leveling</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GEXH3WKK0/vinland-saga">
+                                                        <img src="images/VINLAND SAGA.jpg" alt="VINLAND SAGA">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐8.8
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GEXH3WKK0/vinland-saga">VINLAND SAGA</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GKEH2G440/akudama-drive">
+                                                        <img src="images/Akudama Drive.jpg" alt="Akudama Drive">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.7
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GKEH2G440/akudama-drive">Akudama Drive</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GEXH3WK20/assault-lily-bouquet">
+                                                        <img src="images/Assault Lily - Bouquet.jpg" alt="assault-lily-bouquet">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐6.8
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GEXH3WK20/assault-lily-bouquet">Assault Lily: Bouquet</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GRE5KZQN6/anime-de-training-ex">
+                                                        <img src="images/Training! Ex.jpg" alt="Training! Ex">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐4.0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GRE5KZQN6/anime-de-training-ex">Training! Ex</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GR19V7816/dragon-ball-super">
+                                                        <img src="images/Dragon Ball Super.jpg" alt="Dragon Ball Super">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐8.4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GR19V7816/dragon-ball-super">Dragon Ball Super</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GY8DWQN5Y/golden-kamuy">
+                                                        <img src="images/Golden Kamuy.jpg" alt="Golden Kamuy">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.3
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GY8DWQN5Y/golden-kamuy">Golden Kamuy</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GVDHX8QNW/chainsaw-man">
+                                                        <img src="images/Chainsaw Man.jpg" alt="Chainsaw Man">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐9.0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GVDHX8QNW/chainsaw-man">Chainsaw Man</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G609GE8M6/dgray-man">
+                                                        <img src="images/D.Gray-man.jpg" alt="D.Gray-man">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G609GE8M6/dgray-man">D.Gray-man</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G649PJ0JY/blue-exorcist">
+                                                        <img src="images/Blue Exorcist.jpg" alt="Blue Exorcist">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.6
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G649PJ0JY/blue-exorcist">Blue Exorcist</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G0XHWM1NK/rurouni-kenshin">
+                                                        <img src="images/Rurouni Kenshin.jpg" alt="Rurouni Kenshin">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.7
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G0XHWM1NK/rurouni-kenshin">Rurouni Kenshin</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GVDHX8PMM/orient/">
+                                                        <img src="images/orient.jpg" alt="Orient">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐6.4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GVDHX8PMM/orient/">Orient</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece">
+                                                        <img src="images/onepiece.jpg" alt="Onepiece">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.7
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece">Onepiece</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G6WEV3WM6/noragami">
+                                                        <img src="images/noragami.jpg" alt="Noragami">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.8
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G6WEV3WM6/noragami">Noragami</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GR4PVJ1WY/megalobox">
+                                                        <img src="images/megalobox.jpg" alt="Megalobox">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.9
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GR4PVJ1WY/megalobox">Megalobox</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G8DHV7E9Q/inuyashiki-last-hero">
+                                                        <img src="images/iunyashiki.jpg" alt="Iunyashiki">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.3
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G8DHV7E9Q/inuyashiki-last-hero">Iunyashiki</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/G9VHN9P7W/gleipnir">
+                                                        <img src="images/gleipnir.jpg" alt="Gleipnir">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.0
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/G9VHN9P7W/gleipnir">Gleipnir</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="owl_item">
+                                        <div id="arquivo_content" class="animacao_2 items2">
+                                            <article class="itemtvshows" id="post_1">
+                                                <div class="poster">
+                                                    <a href="https://www.crunchyroll.com/pt-br/series/GRDQV2VWY/free---iwatobi-swim-club">
+                                                        <img src="images/free!.jpg" alt="Free!">
+                                                    </a>
+                                                    <div class="avaliacao">
+                                                        <span class="estrela">
+                                                            ⭐7.4
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="data">
+                                                    <h3>
+                                                        <a href="https://www.crunchyroll.com/pt-br/series/GRDQV2VWY/free---iwatobi-swim-club">Free!</a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar scroll mcustomizado" style="overflow: visible ;">
+                        <div id="csb_1" class="caixa_de_rolagem_personalizada" style="max-height: none;">
+                            <div id="mcsb_1_container" class="mcsb_container" style="position: relative; top: 0; left: 0;">
+                                <div class="barra_lateral">
+                                    <aside id="dtw_conteiner_views" class="widget">
+                                        <h2 class="widget_titulo">Populares</h2>
+                                        <div class="dtw_conteiner dt_views_coun">
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/GYQ4MW246/naruto-shippuden">
+                                                    <div class="imagem">
+                                                        <img src="images/Naruto Shippuden.jpg" alt="Naruto Shippuden" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>          Naruto Shippuden</h3>
+                                                        <span class="wdate">2007</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐8.1
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/GR751KNZY/attack-on-titan">
+                                                    <div class="imagem">
+                                                        <img src="images/Shingeki No Kyojin.jpg" alt="Shingeki No Kyojin" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>          Shingeki No Kyojin</h3>
+                                                        <span class="wdate">2013</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐8.4
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/G6NQ5DWZ6/my-hero-academia">
+                                                    <div class="imagem">
+                                                        <img src="images/Boku no Hero Academia.jpg" alt="Boku no Hero Academia" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>           Boku no Hero Academia</h3>
+                                                        <span class="wdate">2016</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐8.2
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/GRE50KV36/black-clover">
+                                                    <div class="imagem">
+                                                        <img src="images/Black Clover.jpg" alt="Black Clover" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>   Black Clover</h3>
+                                                        <span class="wdate">2017</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐8.0
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/GYNQ5N80Y/alice--zoroku">
+                                                    <div class="imagem">
+                                                        <img src="images/Alice & Zoroku.jpg" alt="Alice & Zoroku" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>   Alice & Zoroku</h3>
+                                                        <span class="wdate">2017</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐8.0
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/G6GG5KQ86/beelzebub">
+                                                    <div class="imagem">
+                                                        <img src="images/Beelzebub.jpg" alt="Beelzebub" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>Beelzebub</h3>
+                                                        <span class="wdate">2011</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐7.9
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/G9VHN9PPW/dragon-ball-z">
+                                                    <div class="imagem">
+                                                        <img src="images/Dragon Ball Z.jpg" alt="Dragon Ball Z" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>   Dragon Ball Z</h3>
+                                                        <span class="wdate">1989</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐7.9
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/G69PZ5PDY/overlord">
+                                                    <div class="imagem">
+                                                        <img src="images/overlord.jpg" alt="Dragon Ball Z" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>   Overlord</h3>
+                                                        <span class="wdate">2015</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐7.5
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/GR9P3Q4V6/punch-line">
+                                                    <div class="imagem">
+                                                        <img src="images/punchline.jpg" alt="Punchline" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>   Punchline</h3>
+                                                        <span class="wdate">2015</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐7.0
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/G0XHWM380/seirei-gensouki-spirit-chronicles">
+                                                    <div class="imagem">
+                                                        <img src="images/seirengensouki.jpg" alt="Seirengensouki" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>    Seirengensouki</h3>
+                                                        <span class="wdate">2015</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐7.4
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="item_b">
+                                                <a href="https://www.crunchyroll.com/pt-br/series/G3KHEVMN1/tokyo-revengers
+                                                ">
+                                                    <div class="imagem">
+                                                        <img src="images/tokyorevengers.jpg" alt="Tokyorevengers" class="mcs_img_carregar">
+                                                    </div>
+                                                    <div class="data">
+                                                        <h3>    Tokyorevengers</h3>
+                                                        <span class="wdate">2021</span>
+                                                        <span class="wextra">
+                                                            <b>
+                                                                <i class="estrela2">
+                                                                    ⭐8.2
+                                                                </i>
+                                                            </b>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="homedescricao">
+                        <div class="footer-section left">
+                            <p>Autores: Joseffer, Adonias, Davi</p>
+                        </div>
+                        <div class="footer-section center">
+                            <p>Favor Não Denunciar o Site. 100% Seguro, Confia No Pai!!!</p>
+                        </div>
+                        <div class="footer-section right">
+                            <p>Todos os Direitos Reservados</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

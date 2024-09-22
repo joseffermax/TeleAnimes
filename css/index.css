@@ -1,0 +1,1048 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sans-Serif', sans-serif;
+}
+
+/* Cabeçalho principal */
+header.main {
+    background: #000;
+    width: 100%;
+    height: 60px;
+    float: left;
+    position: fixed;
+    z-index: 104;
+    box-shadow: 0 10px 5px -7px rgb(96, 35, 129, 0.50);
+}
+
+/* Estilização do texto do logo */
+.textologo {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #fff; 
+    font-size: 29px;
+    font-weight: 750;
+    padding: 11px;
+}
+
+/* Estilização das letras individuais */
+.textologo {
+    position: relative;
+    display: inline-block;
+}
+
+.textologo span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-20px); 
+    animation: appear 0.5s forwards;
+}
+
+/* Animação das letras aparecendo uma a uma, da esquerda para a direita */
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+/* Animação da faixa passando pelo texto */
+.textologo::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: -100%; 
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(96,35,129, 0.50) 0%, rgba(96,35,129, 0.50) 100%);
+    z-index: -1; 
+    transform: skewX(-20deg); 
+    animation: move 3.80s linear infinite; 
+    border-radius: 5px;
+}
+
+/* Animação da faixa passando pelo texto */
+@keyframes move {
+    0% {
+        left: -120%; 
+    }
+    100% {
+        left: 100%; 
+    }
+}
+
+/* Sincronizando a animação das letras com o movimento da faixa */
+.textologo span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.textologo span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.textologo span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.textologo span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.textologo span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.textologo span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.textologo span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.textologo span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.textologo span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+.textologo span:nth-child(10) {
+    animation-delay: 1s;
+}
+
+/* Estilização do contêiner do menu de busca */
+.procurar {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+/* Estilização do contêiner do campo de busca e ícone */
+.search-container {
+    position: relative; 
+    display: flex;
+    align-items: center; 
+}
+
+/* Estilização do campo de busca */
+#s {
+    padding: 8px 40px 8px 8px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px; 
+}
+
+/* Estilização do ícone */
+.logo-icon {
+    position: absolute;
+    top: 13px;
+    right: 15px; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    z-index: 1000;
+}
+
+/* Estilização da mensagem de não encontrado */
+.not-found-message {
+    color: red;
+    font-size: 14px;
+    display: none; 
+}
+
+/* Estilização do link "Início" */
+#link-inicio {
+    display: inline-block;
+    padding: 11px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    position: absolute;
+    top: 11px;
+    left: 260px;
+    transition: background-color 0.5s ease;
+    z-index: 109;
+}
+
+#link-inicio:hover {
+    background-color: rgb(85, 29, 138);
+}
+
+/* Estilização do link "Dúvida/Contato" */
+#link-duv-cont {
+    display: inline-block;
+    padding: 11px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    position: absolute;
+    top: 12px;
+    left: 320px;
+    transition: background-color 0.5s ease;
+    z-index: 109;
+}
+
+#link-duv-cont:hover {
+    background-color: rgb(85, 29, 138);
+}
+
+/* Estilização do link "Novidades" */
+#link-novidades {
+    display: inline-block;
+    padding: 11px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    position: absolute;
+    top: 12px;
+    left: 451px;
+    transition: background-color 0.5s ease;
+    z-index: 109;
+}
+
+#link-novidades:hover {
+    background-color: rgb(85, 29, 138);
+}
+
+/* Estilização do link "Gêneros" */
+#link-generos {
+    display: inline-block;
+    padding: 11px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    position: absolute;
+    top: 12px;
+    left: 548px;
+    transition: background-color 0.5s ease;
+    z-index: 109;
+}
+
+#link-generos:hover {
+    background-color: rgb(85, 29, 138);
+    
+}
+
+.hidden-button {
+    display: block;
+    width: 473px; 
+    height: 20px; 
+    position: absolute; 
+    margin-left: 635px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    border: 1px solid black; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+/* Estilização do campo de pesquisa */
+#s {
+    padding-left: 10px;
+    border: 0;
+    outline: none;
+    background: #1a1a1a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 40px;
+    width: 30vw; 
+    max-width: 350px; 
+    min-width: 200px; 
+    border-radius: 12px;
+    font-family: 'Sans-Serif', sans-serif;
+    position: absolute;
+    top: 12px;
+    right: 65px;
+    z-index: 109;
+    transition: width 0.3s;
+}
+
+/* Estilo para o contêiner .sub_guia */
+.sub_guia {
+    position: absolute;
+    top: 60px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Estilo para os links dentro de .sub_guia */
+.sub_guia a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 6px;
+    margin: 6px;
+    font-size: 12.5px;
+    text-align: center;
+}
+
+/* Estilo para os links de "A" a "Z" dentro de .sub_guia */
+.sub_guia a[href^="#"] {
+    color: white;                 
+    transition: color 0.5s ease;
+}
+
+.sub_guia a[href^="#"]:hover {
+    color: rgb(85, 29, 138);     
+}
+
+/* Estilo para o módulo */
+.modulo {
+    border-color: #000;
+    box-shadow: 0 10px 5px -7px rgba(0,0,0,.09);
+    float: left;
+    width: 100%;
+    min-height: 812px;
+    margin-bottom: 54px;
+    padding: 0;
+    position: relative;
+}
+
+/* Estilo para o conteúdo dentro do módulo */
+.modulo .conten {
+    background: #0f0f0f;
+    border-color: #333;
+    width: calc(100% - 340px);
+    padding: 20px;
+    float: left;
+    border-right: 1px solid #333;
+    border-radius: 12px;
+}
+
+/* Estilo para o cabeçalho dentro do conteúdo do módulo */
+.modulo .conten header {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+}
+
+/* Estilo para o título dentro do cabeçalho do conteúdo do módulo */
+header h1 {
+    color: #fff;
+    border-left: solid 3px rgb(85, 29, 138);
+    padding-left: 10px;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Estilo para o span dentro do cabeçalho do conteúdo do módulo */
+.modulo .conten header span {
+    color: #fff;
+    border-radius: 12px;
+    float: right;
+    font-weight: 500;
+}
+
+/* Estilo para o link "ver tudo" dentro do span do cabeçalho do conteúdo do módulo */
+.modulo .conten header span a.ver_tudo {
+    background: rgb(85, 29, 138) !important;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    margin-left: 6px;
+    border-radius: 12px;
+}
+
+/* Estilo para o módulo de carregamento */
+.load_modulo {
+    color: #757a7d;
+    float: left;
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 150px;
+}
+
+/* Estilo para os itens dentro do conteúdo do módulo */
+.modulo .conten .items {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(85, 29, 138);
+}
+
+/* Estilo para o contêiner externo do carrossel */
+.owl_carousel .involucro_externo {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo para os itens do carrossel */
+.owl_carousel .owl_item {
+    float: left;
+}
+
+/* Estilo para o contêiner do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 150%;
+}
+
+/* Estilo para a imagem dentro do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Estilo alternativo para a imagem dentro do poster */
+.items2 .itemtvshows .poster img {
+    width: 100%;
+    height: 100%;
+    margin-top: -150%;
+    position: absolute;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Estilo para a avaliação do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao {
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    border-radius: 0 0 6px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px 5px;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+/* Estilo para o span dentro da avaliação do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao span {
+    color: #f5de50;
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Efeito de desfoque (blur) e cor roxa ao passar o mouse */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster:hover img {
+    filter: drop-shadow(0 0 6px rgb(85, 29, 138)); 
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
+/* Estilo para o contêiner do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster {
+    width: 100%; 
+    height: 100%; 
+    float: left; 
+    position: relative; 
+    overflow: hidden; 
+    margin: 0; 
+    padding-top: 150%; 
+}
+
+/* Estilo para a imagem dentro do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster img {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    border-radius: 12px; 
+    object-fit: cover; 
+}
+
+/* Estilo alternativo para a imagem dentro do poster */
+.items2 .itemtvshows .poster img {
+    width: 100%; 
+    height: 100%; 
+    margin-top: -150%; 
+    position: absolute; 
+    border-radius: 12px;
+    object-fit: cover; 
+}
+
+/* Estilo para a avaliação do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao {
+    background: rgba(0,0,0,.7); 
+    color: #fff; 
+    border-radius: 0 0 6px; 
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    padding: 2px 5px; 
+    line-height: 18px; 
+    font-size: 13px; 
+}
+
+/* Estilo para o span dentro da avaliação do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao span {
+    color: #f5de50;
+    font-family: 'icomoon' !important; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-variant: normal;
+    text-transform: none; 
+    line-height: 1; 
+    -webkit-font-smoothing: antialiased; 
+}
+
+/* Estilo para o contêiner do poster com tamanho fixo */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster {
+    width: 150px; 
+    height: 150px; 
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center; 
+}
+
+/* Estilo para a imagem dentro do poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    object-fit: cover; 
+}
+
+/* Estilo para o título do anime (centralizado) */
+.modulo .conten .items .owl_item .items2 .itemtvshows .data h3 {
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Estilo para o link do título */
+.modulo .conten .items .owl_item .items2 .itemtvshows .data h3 a {
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.modulo .conten .items .owl_item .items2 .itemtvshows .data h3 a:hover {
+    color: rgb(85, 29, 138); 
+}
+
+/* Estilo para a avaliação no poster */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 0 0 6px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px 5px;
+    line-height: 18px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Estilo para o span da avaliação */
+.modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao span {
+    color: #f5de50;
+    font-family: 'icomoon' !important;
+}
+
+
+/* Estilo para o título dentro do cabeçalho do conteúdo do módulo 2*/
+header h2 {
+    color: #ffffff;
+    border-left: solid 3px rgb(85, 29, 138);
+    padding-left: 10px;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Estilo para a barra lateral */
+.modulo .sidebar {
+    background: #0f0f0f;
+    border-radius: 12px;
+}
+
+/* Estilo para a caixa de rolagem personalizada */
+.caixa_de_rolagem_personalizada {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+
+/* Estilo para os widgets dentro da barra lateral */
+.sidebar aside.widget {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Estilo para o título dos widgets */
+.sidebar aside.widget h2.widget_titulo {
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: -1px;
+    margin-top: 30px;
+    border-left: solid 3px rgb(85, 29, 138);
+    padding-left: 10px;
+    transition: background 0.3s;
+}
+
+/* Efeito de cor ao passar o mouse sobre o item */
+.item_b:hover {
+    background: rgb(85, 29, 138);
+}
+
+/* Estilo para os itens individuais */
+.item_b {
+    background: #1a1a1a;
+    width: 100%;
+    height: 90px;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 12px;
+}
+
+/* Estilo para a imagem dentro dos itens */
+.item_b .imagem {
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+/* Estilo para as imagens dentro do contêiner de imagem */
+.item_b .imagem img {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+}
+
+/* Estilo para a data e título dentro dos itens */
+.item_b .data h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 35px;
+    margin-left: -45px;
+}
+
+/* Estilo para o texto da data dentro dos itens */
+.item_b .data span.wdate {
+    color: #93999e;
+    width: 100%;
+    font-size: 13px;
+    float: left;
+    padding: 3px 0;
+    margin-left: -20px;
+}
+
+/* Estilo extra para informações adicionais dentro dos itens */
+.item_b .data span.wextra {
+    margin-right: -270px;
+    font-size: 13px;
+    float: left;
+    margin-left: -20px;
+    margin-top: -15px;
+}
+
+/* Estilo para o texto em negrito dentro das informações adicionais */
+.item_b .data span.wextra b {
+    color: #737a88;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 12px;
+    font-weight: 400;
+}
+
+/* Estilo para ícones dentro das informações adicionais */
+.item_b .data span.wextra b i {
+    color: #f5de50;
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Estilos para a descrição da página inicial */
+.homedescricao {
+    background: #000;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 9px;
+    border-radius: 12px;
+    max-height: 200px; 
+    overflow: auto;     
+    box-sizing: border-box; 
+    margin-top: 2px;
+}
+
+/* Estilos para parágrafos */
+p {
+    color: #fff;
+    margin: 0;         
+    padding: 10px;     
+    box-sizing: border-box; 
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: black;
+}
+
+/* Estilos para o contêiner de pesquisa */
+.search-container {
+    position: relative;
+}
+
+/* Mensagem de "não encontrado" */
+.not-found-message {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -1px;
+    margin-left: 1250px;
+    color: red;  
+}
+
+/* Estilos para as migalhas de pão */
+.yoastbread p {
+    padding: 2px 1px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    width: 100%;
+    margin-left: -477px;
+    white-space: nowrap;
+}
+
+/* Estilos para customizar o footer */
+footer {
+    position: fixed;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.4s ease-in-out; 
+    z-index: 1000; 
+}
+
+ /* Footer visível */
+ footer.visible {
+    bottom: 0;
+}
+
+/* Estilos para customizar a descricao */
+footer.homedescricao {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+
+/* Footer a esquerda */
+.footer-section.left {
+    text-align: left;
+}
+
+/* Footer no centro */
+.footer-section.center {
+    text-align: center;
+}
+
+/* Footer a direita */
+.footer-section.right {
+    text-align: right;
+}
+
+/* Torna o elemento invisível, mas mantém seu espaço no layout */
+.hidden {
+    visibility: hidden; 
+}
+
+/* Adiciona uma classe para a animação de fade-in e fade-out */
+.fade {
+    transition: opacity 0.5s ease-in-out; 
+}
+
+/* Container que segura os itens dos animes */
+.anime-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    gap: 10px; 
+}
+
+/* Estilos básicos para os itens dos animes */
+.itemtvshows, .dtw_conteiner article {
+    flex: 1 0 21%; 
+    box-sizing: border-box; 
+    will-change: opacity, transform; 
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animação de saída */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Oculta o item do layout com animação */
+.hidden {
+    animation: fadeOut 0.5s forwards; 
+}
+
+/* Mostra o item do layout com animação */
+.visible {
+    animation: fadeIn 0.5s forwards; 
+}
+
+/* Estilização dos itens do cabeçalho e ícone do logo */
+.headitens {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilização da seção de busca */
+.procurar {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilização do ícone do logo */
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Estilo para o formulário de login */
+.form-login {
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(85, 29, 138, 0.5);
+    animation: slideIn 0.5s ease forwards;
+    width: 350px;
+    backdrop-filter: blur(10px);
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos dos inputs */
+.form-login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Estilo do botão de login */
+.form-login button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(85, 29, 138);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efeito hover no botão */
+.form-login button:hover {
+    background-color: rgb(132, 0, 255);
+}
+
+/* Estilo dos textos e labels */
+.form-login label, .form-login h2 {
+    color: white;
+}
+
+/* Oculta a área do usuário antes do login */
+.user-area {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(85, 29, 138, 0.5);
+    animation: slideIn 0.5s ease forwards;
+    width: 350px;
+
+    backdrop-filter: blur(10px);
+}
+
+/* Estilos para a área do usuário */
+.user-area table {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Define a cor do texto das células */
+.user-area th, .user-area td {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+/* Define o título como */
+.user-area caption {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Define a cor dos cabeçalhos com 80% de opacidade */
+.user-area th {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Define a cor do texto nas células com 90% de opacidade */
+.user-area td {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estilo do botão de logout */
+#logoutButton {
+    width: 100%;
+    background-color: rgb(85, 29, 138); 
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 20px; 
+    cursor: pointer;
+}
+
+/* Hover para o botão de logout */
+#logoutButton:hover {
+    background-color: rgb(85, 29, 138); /* Cor do hover */
+}
+
+/* Define a cor do texto de saudação */
+.user-greeting {
+    color: #ffffff; 
+    font-size: 18px; 
+    margin-bottom: 15px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+/* Organiza os itens em uma coluna */
+.headitens {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    width: 100%; 
+    padding-right: 20px; 
+}
+
+/* Centraliza o texto do link de registro */
+#registerLink {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Define o texto do link */
+#registerLink a {
+    color: #550D8A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Adiciona sublinhado ao passar o mouse sobre o link, indicando que é interativo */
+#registerLink a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais para todos os dispositivos */
+.header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.modulo .sidebar {
+    padding: 10px;
+}
+
+
