@@ -34,13 +34,23 @@ O "TeleAnimes" é um site interativo desenvolvido para facilitar a busca e a fil
 O usuário pode voltar para a tela inicial ao clicar em "Início". Ao rolar a tela para baixo, a opção "Início" se transforma em "Voltar", permitindo que o usuário retorne rapidamente ao topo do site.
 
 #### Primeira Opção:
-![Início/Voltar](https://github.com/user-attachments/assets/de08d3ca-1ddc-486f-860f-bf1bed0a55a1)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de08d3ca-1ddc-486f-860f-bf1bed0a55a1" alt="Início/Voltar" style="border-radius: 15px; width: 10%; max-width: 60px;">
+</p>
+
 #### Segunda Opção:
-![Início/Voltar](https://github.com/user-attachments/assets/de08d3ca-1ddc-486f-860f-bf1bed0a55a1)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df53c330-4b9c-493f-b07c-d28e489c4038" alt="Início/Voltar" style="border-radius: 15px; width: 10%; max-width: 60px;">
+</p>
 
-Dúvidas/Contato 📧
-
+#### Dúvidas/Contato 📧
 Um link que leva o usuário a um e-mail para tirar dúvidas ou enviar feedback sobre o site.
+
+#### Opção de Contato:
+<p align="center">
+  <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Dúvidas/Contato" style="border-radius: 15px; width: 100px; height: 100px;">
+</p>
+
 Novidades 🆕
 
 Um botão que redireciona o usuário para o site da Crunchyroll, onde pode encontrar as últimas novidades sobre animes.
