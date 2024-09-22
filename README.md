@@ -8,7 +8,7 @@
 
 O "TeleAnimes" é um site interativo desenvolvido para facilitar a busca e a filtragem de animes, proporcionando uma experiência rica e envolvente para os fãs do gênero. Com uma interface moderna e intuitiva, o projeto utiliza HTML, CSS e JavaScript para criar uma plataforma onde os usuários podem explorar uma vasta gama de animes de forma rápida e eficiente.
 
-## 🔍 Funcionalidades 🆕
+# 🔍 Funcionalidades 🆕
 
 - Início.
 - Dúvidas/Contato.
@@ -22,69 +22,55 @@ O "TeleAnimes" é um site interativo desenvolvido para facilitar a busca e a fil
 - Exibição de Animes.
 - Direitos Autorais.
 
-## ⚙️ Tecnologias utilizadas 🖥️
+# ⚙️ Tecnologias utilizadas 🖥️
 
 - HTML
 - CSS
 - JavaScript
 
-## 📦 Como Usar 📄
+# 📦 Como Usar 📄
 
-### Início 🏠
+## Início 🏠
 O usuário pode voltar para a tela inicial ao clicar em "Início". Ao rolar a tela para baixo, a opção "Início" se transforma em "Voltar", permitindo que o usuário retorne rapidamente ao topo do site.
 
-#### Primeira Opção:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/de08d3ca-1ddc-486f-860f-bf1bed0a55a1" alt="Início/Voltar" style="border-radius: 15px; width: 10%; max-width: 60px;">
-</p>
-
-#### Segunda Opção:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/df53c330-4b9c-493f-b07c-d28e489c4038" alt="Início/Voltar" style="border-radius: 15px; width: 10%; max-width: 60px;">
-</p>
-
-### Dúvidas/Contato 📧
+## Dúvidas/Contato 📧
 Um link que leva o usuário a um e-mail para tirar dúvidas ou enviar feedback sobre o site.
 
-#### Opção de Contato:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/1bcc347d-15b7-4694-a874-2014d81cd145" alt="Dúvidas/Contato" style="border-radius: 15px; width: 150px; height: 100px;">
-</p>
-
-
-Novidades 🆕
-
+## Novidades 🆕
 Um botão que redireciona o usuário para o site da Crunchyroll, onde pode encontrar as últimas novidades sobre animes.
-Gêneros 🎭
 
+## Gêneros 🎭
 Um link que leva para a seção de gêneros no site da Crunchyroll, permitindo que os usuários explorem diferentes categorias de animes.
-Procurar Animes 🔍
 
-Uma seção onde o usuário pode inserir o nome de um anime e encontrar resultados correspondentes.
-Os animes que não correspondem ao nome inserido desaparecem da lista.
-Login 🔑
+## Deficiência Visual 🎧
+Uma opção onde, ao clicar, o usuário com deficiência visual pode ativar a função de navegação por áudio, permitindo escutar sons de navegação e obter uma experiência mais acessível.
 
-A logo do site serve como um link para a seção de login.
-O usuário pode inserir seu nome, e-mail e senha para acessar uma nova aba com suas informações pessoais.
-Filtragem por Sílaba 🔤
+## Barra de Digitação ✍️
+Uma barra onde o usuário pode digitar o nome de um anime que deseja procurar, facilitando a busca por animes específicos.
 
-Ao clicar na sílaba correspondente, o site exibe animes que começam com aquela sílaba específica.
-Exibição de Animes 📺
+## Login 🔑
+A logo do site serve como um link para a seção de login. O usuário pode inserir seu nome, e-mail e senha para acessar uma nova aba com suas informações pessoais.
 
-Os animes são listados com a possibilidade de clicar para ver detalhes.
-Se um anime não estiver disponível, seu nome aparecerá em vermelho, tanto na filtragem quanto na pesquisa.
-Direitos Autorais ©️
+## Barra Secundária 🛠️
+Essa barra exibe os animes disponíveis no site, mostrando se o anime correspondente à pesquisa ou filtragem está presente ou não. Se o anime não for encontrado, o nome será exibido em vermelho.
 
+## Barra Terciária 🔤
+A barra terciária permite a filtragem dos animes por sílaba. Ao clicar na sílaba correspondente, o site exibe todos os animes que começam com essa sílaba.
+
+## Exibição de Animes 📺
+Os animes são exibidos em uma lista interativa, e o usuário pode clicar em cada anime para visualizar mais detalhes. 
+
+## Direitos Autorais ©️
 Na parte final do site, são exibidos os nomes dos direitos autorais e dos autores, junto com uma mensagem engraçada para encerrar a experiência.
 
-## Contribuição 🤝
+# Contribuição 🤝
 
 Contribuições são bem-vindas! Se você tiver sugestões, correções de bugs ou novas funcionalidades, fique à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença 📜
+# Licença 📜
 Este projeto está licenciado sob a MIT License.
 
-## Contato ✉️
+# Contato ✉️
 Se você tiver alguma dúvida ou quiser saber mais sobre o projeto, sinta-se à vontade para entrar em contato através do meu perfil no GitHub. Ou mande umsa mensagem para o seguinte e-mail: joseffermax1472@gmail.com
 
-Aproveite o Gerador de Senhas e mantenha suas informações seguras! ✨🔒
+<h2 align="center">🎉 Aproveite o TeleAnimes e divirta-se explorando o site! ✨</h2>
