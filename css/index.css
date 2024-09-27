@@ -255,6 +255,33 @@ header.main {
     transition: width 0.3s;
 }
 
+/* Estilização inicial do campo de entrada */
+.input-animado {
+    width: 250px; 
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease; 
+}
+
+/* Animação quando o mouse passa por cima ou quando o campo está focado (clicado) */
+.input-animado:hover,
+.input-animado:focus {
+    width: 100px; 
+    box-shadow: 0 0 4px rgb(85, 29, 138); 
+}
+
+/* Estilo inicial para o placeholder (texto de dica dentro do campo) */
+.input-animado::placeholder {
+    color: #999; 
+    transition: color 0.3s ease;
+}
+
+/* Esconde o placeholder quando o campo está focado (clicado para digitar) */
+.input-animado:focus::placeholder {
+    color: transparent; 
+}
+
 /* Estilo para o contêiner .sub_guia */
 .sub_guia {
     position: absolute;
@@ -274,7 +301,7 @@ header.main {
     text-decoration: none;
     margin-right: 10px;
     padding: 6px;
-    margin: 6px;
+    margin: 5px;
     font-size: 12.5px;
     text-align: center;
 }
@@ -285,6 +312,7 @@ header.main {
     transition: color 0.5s ease;
 }
 
+/* Animação ao passar o mouse por cima do link */
 .sub_guia a[href^="#"]:hover {
     color: rgb(85, 29, 138);     
 }
@@ -385,6 +413,7 @@ header h1 {
 .modulo .conten .items .owl_item .items2 .itemtvshows .poster {
     width: 100%;
     height: 100%;
+    min-height: 250px; 
     float: left;
     position: relative;
     overflow: hidden;
@@ -418,6 +447,7 @@ header h1 {
     border-radius: 0 0 6px;
     position: absolute;
     bottom: 0;
+    
     right: 0;
     padding: 2px 5px;
     line-height: 18px;
@@ -426,7 +456,7 @@ header h1 {
 
 /* Estilo para o span dentro da avaliação do poster */
 .modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao span {
-    color: #f5de50;
+    color: #b0b0a9;
     font-family: 'icomoon' !important;
     font-style: normal;
     font-weight: 400;
@@ -539,7 +569,7 @@ header h1 {
 
 /* Estilo para a avaliação no poster */
 .modulo .conten .items .owl_item .items2 .itemtvshows .poster .avaliacao {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     border-radius: 0 0 6px;
     position: absolute;
@@ -548,6 +578,7 @@ header h1 {
     padding: 2px 5px;
     line-height: 18px;
     font-size: 13px;
+    border-radius: 12px;
     text-align: center;
 }
 
@@ -696,17 +727,24 @@ header h2 {
 
 /* Estilos para a descrição da página inicial */
 .homedescricao {
-    background: #000;
-    padding: 5px;
-    display: inline-block;
-    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+    font-size: 14px; 
+    color: #ffffff; 
+}
+
+.footer-section {
+    flex: 1; 
     text-align: center;
-    padding-bottom: 9px;
-    border-radius: 12px;
-    max-height: 200px; 
-    overflow: auto;     
-    box-sizing: border-box; 
-    margin-top: 2px;
+}
+
+.footer-section.left {
+    text-align: left; 
+}
+
+.footer-section.right {
+    text-align: right; 
 }
 
 /* Estilos para parágrafos */
@@ -861,11 +899,33 @@ footer.homedescricao {
     align-items: center;
 }
 
-/* Estilização do ícone do logo */
+/* Estilo para o ícone do logo */
 .logo-icon {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Efeito ao passar o mouse por cima do ícone */
+.logo-icon:hover {
+    transform: scale(1.2) rotate(15deg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Animação de rotação contínua */
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Efeito de rotação contínua ao clicar no ícone */
+.logo-icon:active {
+    animation: girar 1s infinite linear; 
 }
 
 /* Estilo para o formulário de login */
@@ -1045,4 +1105,66 @@ body {
     padding: 10px;
 }
 
+/* Para dispositivos móveis (celular) */
+@media (max-width: 600px) {
+    .itemtvshows {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+    .poster {
+        width: 100%; 
+        padding-top: 100%; 
+    }
+}
+
+/* Para tablets e dispositivos maiores (notebooks) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .itemtvshows {
+        flex-direction: row; 
+    }
+    .poster {
+        width: 50%; 
+        padding-top: 75%; 
+    }
+}
+
+/* Para desktops (PCs) */
+@media (min-width: 1025px) {
+    .itemtvshows {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .poster {
+        width: calc(33.33% - 20px); 
+        padding-top: 75%; 
+        margin: 10px; 
+    }
+}
+
+/* Para TVs (telas grandes) */
+@media (min-width: 1600px) {
+    .itemtvshows {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .poster {
+        width: calc(25% - 20px); 
+        padding-top: 75%; 
+        margin: 10px; 
+    }
+}
+
+/* Estilo do contêiner principal */
+.container {
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 20px;
+}
+
+/* Estilo dos itens de anime */
+.itemtvshows {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 

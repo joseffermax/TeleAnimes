@@ -329,3 +329,4 @@ function showLoginForm() {
     formLogin.style.display = 'block'; 
     formLogin.classList.add('animate');  
 }
+
