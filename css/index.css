@@ -1168,3 +1168,8 @@ body {
     margin-bottom: 20px;
 }
 
+/* "Esconder os animes" */
+.faded {
+    opacity: 0.3;
+    pointer-events: none; 
+}

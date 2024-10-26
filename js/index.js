@@ -1,4 +1,3 @@
-// Gerenciamento de Animes, Aba
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('s');
     const animeItemsOriginal = document.querySelectorAll('.itemtvshows');
@@ -17,13 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const title = titleElement.textContent.trim().toLowerCase();
 
                 if (title.includes(searchText) || searchText === '') {
-                    anime.classList.remove('hidden');
-                    anime.classList.add('visible');
+                    anime.classList.remove('faded');
                     anime.classList.add('fade');
                     animeFound = true;
                 } else {
-                    anime.classList.remove('visible');
-                    anime.classList.add('hidden');
+                    anime.classList.add('faded');
                     anime.classList.remove('fade'); 
                 }
             }
@@ -49,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
 
 // Criar E-mail na caixa de 'link-duv-cont'
 document.addEventListener('DOMContentLoaded', function() {
@@ -125,13 +123,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const allAnimeElements = document.querySelectorAll('.itemtvshows, .item_b, .dtw_conteiner .dt_views_coun .item_b'); 
 
         allAnimeElements.forEach(anime => {
-            anime.classList.remove('visible', 'fade');
-            anime.classList.add('hidden');
+            anime.classList.remove('faded', 'fade');
+            anime.classList.add('faded'); 
         });
 
         animes.forEach(anime => {
-            anime.classList.remove('hidden');
-            anime.classList.add('visible', 'fade');
+            anime.classList.remove('faded'); 
+            anime.classList.add('fade');
         });
     }
 
@@ -139,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const allAnimeElements = document.querySelectorAll('.itemtvshows, .item_b, .dtw_conteiner .dt_views_coun .item_b'); 
 
         allAnimeElements.forEach(anime => {
-            anime.classList.remove('hidden');
-            anime.classList.add('visible', 'fade');
+            anime.classList.remove('faded');
+            anime.classList.add('fade');
         });
 
         document.querySelector('.bread_last').textContent = 'Animes → Todos os animes estão sendo exibidos';
@@ -156,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000);
     }
 });
+
 
 // Responsável por voltar para o topo do site
 document.addEventListener('DOMContentLoaded', function() {
