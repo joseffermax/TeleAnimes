@@ -1,92 +1,89 @@
 <h1 align="center">🎥 TeleAnimes 👾</h1>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen.svg" alt="Status do Projeto">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="Licença MIT">
   </a>
 </p>
 
-O <strong>TeleAnimes</strong> é um site interativo desenvolvido para facilitar a busca e a filtragem de animes, proporcionando uma experiência rica e envolvente para os fãs do gênero. Com uma interface moderna e intuitiva, o projeto utiliza <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para criar uma plataforma onde os usuários podem explorar uma vasta gama de animes de forma rápida e eficiente.
+<p align="center">
+  Projeto desenvolvido para facilitar a busca, organização e interação com animes, proporcionando uma experiência intuitiva, divertida e acessível aos usuários.
+</p>
 
-<h2>🔍 Funcionalidades 🆕</h2>
+<p align="center">
+  <strong>💡 Site com filtragem por letra, barra de pesquisa, acessibilidade sonora, login customizado e muito mais!</strong>
+</p>
 
-  • Início 🏠<br>
-  • Dúvidas/Contato 📧<br>
-  • Novidades 🆕<br>
-  • Gêneros 🎭<br>
-  • Deficiência Visual 🎧<br>
-  • Barra de Digitação ✍️<br>
-  • Login 🔑<br>
-  • Barra Secundária 🛠️<br>
-  • Barra Terciária 🔤<br>
-  • Exibição de Animes 📺<br>
+---
 
-<h2>⚙️ Tecnologias Utilizadas 🖥️</h2>
+## 📝 Sobre o Projeto
 
-  • HTML<br>
-  • CSS<br>
-  • JavaScript
+O **TeleAnimes** é um site interativo desenvolvido para facilitar a busca e a filtragem de animes, proporcionando uma experiência rica e envolvente para os fãs do gênero. Com uma interface moderna e intuitiva, o projeto utiliza **HTML**, **CSS** e **JavaScript** para criar uma plataforma onde os usuários podem explorar uma vasta gama de animes de forma rápida e eficiente.
 
-<h2>📦 Como Usar 📄</h2>
+---
 
-### Início 🏠
+## 🔍 Funcionalidades
 
-O usuário pode voltar para a tela inicial ao clicar em "Início". Ao rolar a tela para baixo, a opção "Início" se transforma em "Voltar", permitindo que o usuário retorne rapidamente ao topo do site.
+- **🏠 Início:** Retorna para o topo da página com rolagem dinâmica.
+- **📧 Dúvidas/Contato:** Link direto para envio de e-mail com dúvidas ou sugestões.
+- **🆕 Novidades:** Acesso rápido ao site da Crunchyroll com novidades sobre animes.
+- **🎭 Gêneros:** Redirecionamento para a seção de gêneros da Crunchyroll.
+- **🎧 Deficiência Visual:** Ativa sons de navegação para acessibilidade.
+- **✍️ Barra de Digitação:** Permite buscar animes específicos por nome.
+- **🔑 Login:** Formulário para inserção de nome, e-mail e senha, com exibição personalizada.
+- **🛠️ Barra Secundária:** Mostra os animes disponíveis ou sinaliza os não encontrados em vermelho.
+- **🔤 Barra Terciária:** Filtra os animes por sílabas iniciais.
+- **📺 Exibição de Animes:** Lista interativa com visualização de detalhes ao clicar.
 
+---
 
-### Dúvidas/Contato 📧
+## ⚙️ Tecnologias Utilizadas
 
-Um link que leva o usuário a um e-mail para tirar dúvidas ou enviar feedback sobre o site.
+- **HTML5**
+- **CSS3**
+- **JavaScript (puro)**
 
-### Novidades 🆕
+---
 
-Um botão que redireciona o usuário para o site da Crunchyroll, onde pode encontrar as últimas novidades sobre animes.
+## 📦 Como Usar
 
-### Gêneros 🎭
+```bash
+# Clone o repositório
+git clone https://github.com/Joseffer1472/TeleAnimes.git
 
-Um link que leva para a seção de gêneros no site da Crunchyroll, permitindo que os usuários explorem diferentes categorias de animes.
+# Acesse o diretório do projeto
+cd TeleAnimes
 
-### Deficiência Visual 🎧
+# Abra o arquivo principal no navegador
+start teleanimes.html
+````
+---
 
-Uma opção onde, ao clicar, o usuário com deficiência visual pode ativar a função de navegação por áudio, permitindo escutar sons de navegação e obter uma experiência mais acessível.
+## 🤝 Contribuições
 
-### Barra de Digitação ✍️
+Contribuições são bem-vindas! Caso tenha sugestões, melhorias ou correções, fique à vontade para abrir uma *issue* ou enviar um *pull request*.
 
-Uma barra onde o usuário pode digitar o nome de um anime que deseja procurar, facilitando a busca por animes específicos.
+---
 
-### Login 🔑
+## 📜 Licença
 
-A logo do site serve como um link para a seção de login. O usuário pode inserir seu nome, e-mail e senha para acessar uma nova aba com suas informações pessoais.
+Distribuído sob a Licença MIT. Veja `LICENSE` para mais informações.
 
-### Barra Secundária 🛠️
+---
 
-Essa barra exibe os animes disponíveis no site, mostrando se o anime correspondente à pesquisa ou filtragem está presente ou não. Se o anime não for encontrado, o nome será exibido em vermelho.
+## 👨‍🏫 Orientação
 
-### Barra Terciária 🔤
+Este projeto foi desenvolvido como parte da **3ª avaliação** da disciplina **Programação III**, sob a orientação do professor: **José Anderson Rodrigues de Souza**
 
-A barra terciária permite a filtragem dos animes por sílaba. Ao clicar na sílaba correspondente, o site exibe todos os animes que começam com essa sílaba.
+---
 
-### Exibição de Animes 📺
+## 📬 Contato
 
-Os animes são exibidos em uma lista interativa, e o usuário pode clicar em cada anime para visualizar mais detalhes.
+📧 Email: [joseffermax1472@gmail.com](mailto:joseffermax1472@gmail.com)  
+🔗 GitHub: [@joseffermax](https://github.com/joseffermax)
 
-<h2>🤝 Contribuição 🤝</h2>
+---
 
-Contribuições são bem-vindas! Se você tiver sugestões, correções de bugs ou novas funcionalidades, fique à vontade para abrir uma issue ou enviar um pull request.
+<h2 align="center">🎉 Aproveite o TeleAnimes e divirta-se explorando o universo dos animes com facilidade, estilo e acessibilidade! 🚀</h2>
 
-<h2>📜 Licença 📜</h2>
-
-Este projeto está licenciado sob a MIT License.
-
-<h2>📘 Orientação 📘</h2>
-
-Este projeto foi desenvolvido sob a orientação do professor José Anderson Rodrigues de Souza como parte da terceira avaliação da disciplina de Programação III.
-
-<h2>🎓 Créditos 🎓</h2>
-
-<p>Contribuições para a conclusão do projeto foram realizadas por <strong>Davi Araújo Silva</strong> e <strong>Adonias Alves Cardoso Junior</strong>.</p>
-
-<h2>✉️ Contato ✉️</h2>
-Se você tiver alguma dúvida ou quiser saber mais sobre o projeto, sinta-se à vontade para entrar em contato através do meu perfil no GitHub ou mande uma mensagem para o seguinte e-mail: <strong>joseffermax1472@gmail.com</strong>.
-
-<h2 align="center">🎉 Aproveite o TeleAnimes e divirta-se explorando o site! ✨</h2>
